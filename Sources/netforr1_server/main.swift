@@ -11,8 +11,7 @@ print("Accepted connection from: \(connection.remoteHostname) on port \(connecti
 print("Socket Signature: \(String(describing: connection.signature?.description))")
 
 while true {
-    print("filename: ", separator: "")
-    guard let filename = readLine() else {
+    guard let filename = input("filename") else {
         print("Invalid filename")
         continue
     }
