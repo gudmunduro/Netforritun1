@@ -1,0 +1,6 @@
+H:\net1\verk1\verk1\bin\Debug\verk1.exe.config
+H:\net1\verk1\verk1\bin\Debug\verk1.exe
+H:\net1\verk1\verk1\bin\Debug\verk1.pdb
+H:\net1\verk1\verk1\obj\Debug\verk1.csprojResolveAssemblyReference.cache
+H:\net1\verk1\verk1\obj\Debug\verk1.exe
+H:\net1\verk1\verk1\obj\Debug\verk1.pdb
