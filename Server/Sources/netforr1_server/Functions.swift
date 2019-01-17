@@ -1,6 +1,6 @@
 
 func input(_ text: String = "") -> String?
 {
-    print(text + ": ", seperator: "")
+    print(text + ": ", separator: "")
     return readLine()
 }
