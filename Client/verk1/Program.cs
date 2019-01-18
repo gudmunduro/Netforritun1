@@ -36,13 +36,28 @@ namespace verk1
             
 
             byte[] bytes = new byte[1024];
+            byte[] writeBuffer = Encoding.UTF8.GetBytes("lf");
+            networkStream.Write(writeBuffer, 0, writeBuffer.Length);
+            while(true)
+            {
+                System.Threading.Thread.Sleep(2000);
+                
+                try
+                {
+                    networkStream.Read(bytes, 0, 1024);
+                    Console.WriteLine("NW stream read");
+                    string data = Encoding.UTF8.GetString(bytes);
+                    Console.WriteLine("Server sent message: {0}", data);
+                    return;
+                }
+                catch
+                {
+                    Console.WriteLine("No message received");
+                }
+            }
             
-            Console.WriteLine("NW stream read");
-
-            networkStream.Read(bytes, 0, 1024);
-            string data = Encoding.UTF8.GetString(bytes);
-            System.Threading.Thread.Sleep(5000);
-            Console.WriteLine("Server sent message: {0}", data);
+            
+            
             //networkStream.Close();
             //tcpClient.Close();
             return;
