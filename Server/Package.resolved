@@ -9,6 +9,15 @@
           "revision": "a40b405bdf32bc853307dd5dee8d00636e394013",
           "version": "1.0.44"
         }
+      },
+      {
+        "package": "Files",
+        "repositoryURL": "https://github.com/JohnSundell/Files.git",
+        "state": {
+          "branch": null,
+          "revision": "06f95bd1bf4f8d5f50bc6bb30b808c253acd4c88",
+          "version": "2.2.1"
+        }
       }
     ]
   },

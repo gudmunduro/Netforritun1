@@ -1,0 +1,248 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "__fd_set_count"
+provides-nominal:
+provides-member:
+- ["6SocketAAC7AddressO", ""]
+- ["So6fd_seta", ""]
+- ["6SocketAAC7AddressO", "withSockAddrPointer"]
+- ["6SocketAAC7AddressO", "init"]
+- ["So6fd_seta", "withCArrayAccess"]
+- ["So6fd_seta", "zero"]
+- ["So6fd_seta", "set"]
+- ["So6fd_seta", "clear"]
+- ["So6fd_seta", "isSet"]
+depends-top-level:
+- !private "!="
+- !private "%"
+- !private "&"
+- !private "&="
+- !private "/"
+- !private "<<"
+- !private "AF_INET"
+- !private "AF_INET6"
+- !private "AF_UNIX"
+- "AssignmentPrecedence"
+- "Bool"
+- "FloatLiteralType"
+- "Int"
+- "Int32"
+- "IntegerLiteralType"
+- !private "MemoryLayout"
+- "Socket"
+- !private "UInt32"
+- "UnsafeMutablePointer"
+- !private "UnsafeMutableRawPointer"
+- "UnsafePointer"
+- "Void"
+- "__fd_set_count"
+- "fd_set"
+- "sockaddr"
+- !private "sockaddr_in"
+- !private "sockaddr_in6"
+- !private "sockaddr_storage"
+- !private "sockaddr_un"
+- "socklen_t"
+- !private "withUnsafeMutablePointer"
+- !private "withUnsafePointer"
+- !private "|="
+- !private "~"
+- !private "~="
+depends-member:
+- !private ["6SocketAAC7AddressO", "AF_INET"]
+- !private ["6SocketAAC7AddressO", "AF_INET6"]
+- !private ["6SocketAAC7AddressO", "AF_UNIX"]
+- !private ["6SocketAAC7AddressO", "Int32"]
+- !private ["6SocketAAC7AddressO", "MemoryLayout"]
+- !private ["6SocketAAC7AddressO", "Socket"]
+- ["6SocketAAC7AddressO", "UnsafeMutablePointer"]
+- ["6SocketAAC7AddressO", "UnsafePointer"]
+- ["6SocketAAC7AddressO", "Void"]
+- ["6SocketAAC7AddressO", "init"]
+- ["6SocketAAC7AddressO", "ipv4"]
+- ["6SocketAAC7AddressO", "ipv6"]
+- ["6SocketAAC7AddressO", "sockaddr"]
+- !private ["6SocketAAC7AddressO", "sockaddr_in"]
+- !private ["6SocketAAC7AddressO", "sockaddr_in6"]
+- !private ["6SocketAAC7AddressO", "sockaddr_storage"]
+- !private ["6SocketAAC7AddressO", "sockaddr_un"]
+- ["6SocketAAC7AddressO", "socklen_t"]
+- ["6SocketAAC7AddressO", "unix"]
+- ["6SocketAAC7AddressO", "withSockAddrPointer"]
+- !private ["6SocketAAC7AddressO", "withUnsafeMutablePointer"]
+- !private ["6SocketAAC7AddressO", "withUnsafePointer"]
+- !private ["Sz", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "initialize"]
+- !private ["s7CVarArgP", "pointee"]
+- !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "withMemoryRebound"]
+- !private ["SL", "assumingMemoryBound"]
+- !private ["SL", "init"]
+- !private ["SL", "initialize"]
+- !private ["SL", "pointee"]
+- !private ["SL", "subscript"]
+- !private ["SL", "withMemoryRebound"]
+- !private ["s28CustomDebugStringConvertibleP", "assumingMemoryBound"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "initialize"]
+- !private ["s28CustomDebugStringConvertibleP", "pointee"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "withMemoryRebound"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "assumingMemoryBound"]
+- !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "initialize"]
+- !private ["s29CustomPlaygroundQuickLookableP", "pointee"]
+- !private ["s29CustomPlaygroundQuickLookableP", "subscript"]
+- !private ["s29CustomPlaygroundQuickLookableP", "withMemoryRebound"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "assumingMemoryBound"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "initialize"]
+- !private ["s17CustomReflectableP", "pointee"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s17CustomReflectableP", "withMemoryRebound"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["Se", "_getBuiltinLogicValue"]
+- !private ["Se", "assumingMemoryBound"]
+- !private ["Se", "init"]
+- !private ["SE", "_getBuiltinLogicValue"]
+- !private ["SE", "assumingMemoryBound"]
+- !private ["SE", "init"]
+- !private ["SQ", "_getBuiltinLogicValue"]
+- !private ["SQ", "assumingMemoryBound"]
+- !private ["SQ", "init"]
+- !private ["SQ", "initialize"]
+- !private ["SQ", "pointee"]
+- !private ["SQ", "subscript"]
+- !private ["SQ", "withMemoryRebound"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s27ExpressibleByIntegerLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "assumingMemoryBound"]
+- !private ["s17FixedWidthIntegerP", "init"]
+- !private ["SH", "_getBuiltinLogicValue"]
+- !private ["SH", "assumingMemoryBound"]
+- !private ["SH", "init"]
+- !private ["SH", "initialize"]
+- !private ["SH", "pointee"]
+- !private ["SH", "subscript"]
+- !private ["SH", "withMemoryRebound"]
+- !private ["Si", "init"]
+- !private ["s5Int32V", "init"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s12MemoryLayoutO", "size"]
+- !private ["s10MirrorPathP", "init"]
+- !private ["Sj", "init"]
+- !private ["Sq", "assumingMemoryBound"]
+- !private ["SZ", "init"]
+- !private ["s13SignedNumericP", "init"]
+- ["6SocketAAC", "Address"]
+- !private ["6Socket0A6ReaderP", "Address"]
+- !private ["6Socket0A6WriterP", "Address"]
+- !private ["Sx", "assumingMemoryBound"]
+- !private ["Sx", "init"]
+- !private ["Sx", "initialize"]
+- !private ["Sx", "pointee"]
+- !private ["Sx", "subscript"]
+- !private ["Sx", "withMemoryRebound"]
+- !private ["s6UInt32V", "init"]
+- !private ["Sp", "initialize"]
+- !private ["Sp", "subscript"]
+- !private ["Sp", "withMemoryRebound"]
+- !private ["Sv", "assumingMemoryBound"]
+- !private ["Sv", "init"]
+- !private ["SP", "pointee"]
+- !private ["SP", "withMemoryRebound"]
+- !private ["SU", "init"]
+- !private ["s18_BitwiseOperationsP", "init"]
+- !private ["10Foundation13_CFBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s8_PointerP", "assumingMemoryBound"]
+- !private ["s8_PointerP", "init"]
+- !private ["s8_PointerP", "initialize"]
+- !private ["s8_PointerP", "pointee"]
+- !private ["s8_PointerP", "subscript"]
+- !private ["s8_PointerP", "withMemoryRebound"]
+- !private ["s12_UnwrappableP", "assumingMemoryBound"]
+- ["So6fd_seta", "Bool"]
+- ["So6fd_seta", "Int"]
+- ["So6fd_seta", "Int32"]
+- !private ["So6fd_seta", "UInt32"]
+- ["So6fd_seta", "UnsafeMutablePointer"]
+- !private ["So6fd_seta", "UnsafeMutableRawPointer"]
+- !private ["So6fd_seta", "__fd_set_count"]
+- !private ["So6fd_seta", "__fds_bits"]
+- !private ["So6fd_seta", "address"]
+- ["So6fd_seta", "clear"]
+- !private ["So6fd_seta", "fd_set"]
+- ["So6fd_seta", "isSet"]
+- ["So6fd_seta", "set"]
+- ["So6fd_seta", "withCArrayAccess"]
+- !private ["So6fd_seta", "withUnsafeMutablePointer"]
+- ["So6fd_seta", "zero"]
+- !private ["So16sockaddr_storageV", "init"]
+- !private ["So16sockaddr_storageV", "ss_family"]
+depends-nominal:
+- "6SocketAAC7AddressO"
+- !private "Sz"
+- !private "Sb"
+- !private "s7CVarArgP"
+- !private "SL"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "SE"
+- !private "SQ"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s17FixedWidthIntegerP"
+- !private "SH"
+- !private "Si"
+- !private "s5Int32V"
+- !private "s25LosslessStringConvertibleP"
+- !private "s12MemoryLayoutO"
+- !private "s10MirrorPathP"
+- !private "Sj"
+- !private "Sq"
+- !private "SZ"
+- !private "s13SignedNumericP"
+- "6SocketAAC"
+- !private "6Socket0A6ReaderP"
+- !private "6Socket0A6WriterP"
+- !private "Sx"
+- !private "s6UInt32V"
+- !private "Sp"
+- !private "Sv"
+- !private "SP"
+- !private "SU"
+- !private "s18_BitwiseOperationsP"
+- !private "10Foundation13_CFBridgeableP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s8_PointerP"
+- !private "s12_UnwrappableP"
+- "So6fd_seta"
+- !private "So16sockaddr_storageV"
+depends-dynamic-lookup:
+depends-external:
+- "/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/glibc.modulemap"
+interface-hash: "bed5bcdbffed88e64945e6420f0fbd5f"

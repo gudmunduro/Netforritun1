@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/home/gumundur/Documents/netforr1_server/.build/x86_64-unknown-linux/debug/netforr1_server.build/master.swiftdeps"
+  },
+  "/home/gumundur/Documents/netforr1_server/Sources/netforr1_server/main.swift": {
+    "dependencies": "/home/gumundur/Documents/netforr1_server/.build/x86_64-unknown-linux/debug/netforr1_server.build/main.d",
+    "object": "/home/gumundur/Documents/netforr1_server/.build/x86_64-unknown-linux/debug/netforr1_server.build/main.swift.o",
+    "swiftmodule": "/home/gumundur/Documents/netforr1_server/.build/x86_64-unknown-linux/debug/netforr1_server.build/main~partial.swiftmodule",
+    "swift-dependencies": "/home/gumundur/Documents/netforr1_server/.build/x86_64-unknown-linux/debug/netforr1_server.build/main.swiftdeps"
+  },
+  "/home/gumundur/Documents/netforr1_server/Sources/netforr1_server/netforr1_server.swift": {
+    "dependencies": "/home/gumundur/Documents/netforr1_server/.build/x86_64-unknown-linux/debug/netforr1_server.build/netforr1_server.d",
+    "object": "/home/gumundur/Documents/netforr1_server/.build/x86_64-unknown-linux/debug/netforr1_server.build/netforr1_server.swift.o",
+    "swiftmodule": "/home/gumundur/Documents/netforr1_server/.build/x86_64-unknown-linux/debug/netforr1_server.build/netforr1_server~partial.swiftmodule",
+    "swift-dependencies": "/home/gumundur/Documents/netforr1_server/.build/x86_64-unknown-linux/debug/netforr1_server.build/netforr1_server.swiftdeps"
+  }
+}

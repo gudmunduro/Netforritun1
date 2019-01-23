@@ -1,0 +1,250 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "socket"
+- "connection"
+provides-nominal:
+provides-member:
+depends-top-level:
+- "BooleanLiteralType"
+- "Data"
+- "FileManager"
+- "FloatLiteralType"
+- "IntegerLiteralType"
+- "Socket"
+- "String"
+- "StringLiteralType"
+- "TernaryPrecedence"
+- "URL"
+- "UnicodeScalarType"
+- "connection"
+- "print"
+- "readLine"
+- "socket"
+depends-member:
+- ["SK", "hasPrefix"]
+- ["SK", "init"]
+- ["SK", "init"]
+- ["Sb", "_getBuiltinLogicValue"]
+- ["s7CVarArgP", "_getBuiltinLogicValue"]
+- ["Sl", "hasPrefix"]
+- ["Sl", "init"]
+- ["Sl", "init"]
+- ["SL", "hasPrefix"]
+- ["SL", "init"]
+- ["SL", "init"]
+- ["s28CustomDebugStringConvertibleP", "currentDirectoryPath"]
+- ["s28CustomDebugStringConvertibleP", "default"]
+- ["s28CustomDebugStringConvertibleP", "hasPrefix"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- ["s29CustomPlaygroundQuickLookableP", "hasPrefix"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- ["s17CustomReflectableP", "hasPrefix"]
+- ["s17CustomReflectableP", "init"]
+- ["s17CustomReflectableP", "init"]
+- ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- ["s23CustomStringConvertibleP", "currentDirectoryPath"]
+- ["s23CustomStringConvertibleP", "default"]
+- ["s23CustomStringConvertibleP", "description"]
+- ["s23CustomStringConvertibleP", "hasPrefix"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
+- ["10Foundation4DataV", "init"]
+- ["Se", "_getBuiltinLogicValue"]
+- ["Se", "hasPrefix"]
+- ["Se", "init"]
+- ["Se", "init"]
+- ["SE", "_getBuiltinLogicValue"]
+- ["SE", "hasPrefix"]
+- ["SE", "init"]
+- ["SE", "init"]
+- ["SQ", "_getBuiltinLogicValue"]
+- ["SQ", "currentDirectoryPath"]
+- ["SQ", "default"]
+- ["SQ", "hasPrefix"]
+- ["SQ", "init"]
+- ["SQ", "init"]
+- ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "hasPrefix"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "hasPrefix"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "hasPrefix"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["10Foundation11FileManagerC", "currentDirectoryPath"]
+- ["10Foundation11FileManagerC", "default"]
+- ["SH", "_getBuiltinLogicValue"]
+- ["SH", "currentDirectoryPath"]
+- ["SH", "default"]
+- ["SH", "hasPrefix"]
+- ["SH", "init"]
+- ["SH", "init"]
+- ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- ["s25LosslessStringConvertibleP", "hasPrefix"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "hasPrefix"]
+- ["s10MirrorPathP", "init"]
+- ["s10MirrorPathP", "init"]
+- ["SM", "init"]
+- ["10Foundation8NSCodingP", "hasPrefix"]
+- ["10Foundation9NSCopyingP", "hasPrefix"]
+- ["10Foundation16NSMutableCopyingP", "hasPrefix"]
+- ["10Foundation8NSObjectC", "currentDirectoryPath"]
+- ["10Foundation8NSObjectC", "default"]
+- ["10Foundation8NSObjectC", "hasPrefix"]
+- ["10Foundation16NSObjectProtocolP", "currentDirectoryPath"]
+- ["10Foundation16NSObjectProtocolP", "default"]
+- ["10Foundation16NSObjectProtocolP", "hasPrefix"]
+- ["10Foundation14NSSecureCodingP", "hasPrefix"]
+- ["10Foundation8NSStringC", "hasPrefix"]
+- ["Sk", "init"]
+- ["Sm", "hasPrefix"]
+- ["Sm", "init"]
+- ["Sm", "init"]
+- ["10Foundation20ReferenceConvertibleP", "init"]
+- ["ST", "hasPrefix"]
+- ["ST", "init"]
+- ["ST", "init"]
+- ["6SocketAAC9SignatureV", "description"]
+- ["6SocketAAC", "acceptClientConnection"]
+- ["6SocketAAC", "create"]
+- ["6SocketAAC", "listen"]
+- ["6SocketAAC", "remoteHostname"]
+- ["6SocketAAC", "remotePort"]
+- ["6SocketAAC", "signature"]
+- ["6SocketAAC", "write"]
+- ["6Socket0A6ReaderP", "acceptClientConnection"]
+- ["6Socket0A6ReaderP", "create"]
+- ["6Socket0A6ReaderP", "listen"]
+- ["6Socket0A6ReaderP", "remoteHostname"]
+- ["6Socket0A6ReaderP", "remotePort"]
+- ["6Socket0A6ReaderP", "signature"]
+- ["6Socket0A6ReaderP", "write"]
+- ["6Socket0A6WriterP", "acceptClientConnection"]
+- ["6Socket0A6WriterP", "create"]
+- ["6Socket0A6WriterP", "listen"]
+- ["6Socket0A6WriterP", "remoteHostname"]
+- ["6Socket0A6WriterP", "remotePort"]
+- ["6Socket0A6WriterP", "signature"]
+- ["6Socket0A6WriterP", "write"]
+- ["SS", "hasPrefix"]
+- ["SS", "init"]
+- ["SS", "init"]
+- ["Sy", "hasPrefix"]
+- ["Sy", "init"]
+- ["Sy", "init"]
+- ["s16TextOutputStreamP", "hasPrefix"]
+- ["s16TextOutputStreamP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "hasPrefix"]
+- ["s20TextOutputStreamableP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- ["10Foundation3URLV", "init"]
+- ["10Foundation13_CFBridgeableP", "_getBuiltinLogicValue"]
+- ["10Foundation13_CFBridgeableP", "hasPrefix"]
+- ["10Foundation13_CFBridgeableP", "init"]
+- ["10Foundation13_CFBridgeableP", "init"]
+- ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "hasPrefix"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "hasPrefix"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "hasPrefix"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "hasPrefix"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s34_ExpressibleByFileReferenceLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "hasPrefix"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["10Foundation13_NSBridgeableP", "hasPrefix"]
+- ["10Foundation13_NSBridgeableP", "init"]
+- ["10Foundation13_NSBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- ["s21_ObjectiveCBridgeableP", "hasPrefix"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- ["10Foundation17_StructBridgeableP", "hasPrefix"]
+- ["10Foundation21_StructTypeBridgeableP", "hasPrefix"]
+- ["10Foundation16_SwiftBridgeableP", "hasPrefix"]
+- ["s16_SwiftStringViewP", "hasPrefix"]
+- ["s16_SwiftStringViewP", "init"]
+- ["s16_SwiftStringViewP", "init"]
+depends-nominal:
+- "SK"
+- "Sb"
+- "s7CVarArgP"
+- "Sl"
+- "SL"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "10Foundation4DataV"
+- "Se"
+- "SE"
+- "SQ"
+- "s27ExpressibleByBooleanLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- "10Foundation11FileManagerC"
+- "SH"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- "SM"
+- "10Foundation8NSCodingP"
+- "10Foundation9NSCopyingP"
+- "10Foundation16NSMutableCopyingP"
+- "10Foundation8NSObjectC"
+- "10Foundation16NSObjectProtocolP"
+- "10Foundation14NSSecureCodingP"
+- "10Foundation8NSStringC"
+- "Sk"
+- "Sm"
+- "10Foundation20ReferenceConvertibleP"
+- "ST"
+- "6SocketAAC9SignatureV"
+- "6SocketAAC"
+- "6Socket0A6ReaderP"
+- "6Socket0A6WriterP"
+- "SS"
+- "Sy"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- "10Foundation3URLV"
+- "10Foundation13_CFBridgeableP"
+- "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s34_ExpressibleByFileReferenceLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- "10Foundation13_NSBridgeableP"
+- "s21_ObjectiveCBridgeableP"
+- "10Foundation17_StructBridgeableP"
+- "10Foundation21_StructTypeBridgeableP"
+- "10Foundation16_SwiftBridgeableP"
+- "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/home/gumundur/Documents/netforr1_server/.build/x86_64-unknown-linux/debug/Socket.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/glibc.modulemap"
+interface-hash: "87becb3ac9afa547bd32a966ae635a8f"
