@@ -4,3 +4,9 @@ H:\net1\verk1\verk1\bin\Debug\verk1.pdb
 H:\net1\verk1\verk1\obj\Debug\verk1.csprojResolveAssemblyReference.cache
 H:\net1\verk1\verk1\obj\Debug\verk1.exe
 H:\net1\verk1\verk1\obj\Debug\verk1.pdb
+C:\Users\0812003270\Downloads\Netforritun1-master\Netforritun1-master\Client\verk1\bin\Debug\verk1.exe.config
+C:\Users\0812003270\Downloads\Netforritun1-master\Netforritun1-master\Client\verk1\obj\Debug\verk1.exe
+C:\Users\0812003270\Downloads\Netforritun1-master\Netforritun1-master\Client\verk1\obj\Debug\verk1.pdb
+C:\Users\0812003270\Downloads\Netforritun1-master\Netforritun1-master\Client\verk1\bin\Debug\verk1.exe
+C:\Users\0812003270\Downloads\Netforritun1-master\Netforritun1-master\Client\verk1\bin\Debug\verk1.pdb
+C:\Users\0812003270\Downloads\Netforritun1-master\Netforritun1-master\Client\verk1\obj\Debug\verk1.csprojResolveAssemblyReference.cache
