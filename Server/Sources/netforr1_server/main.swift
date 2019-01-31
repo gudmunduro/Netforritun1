@@ -2,24 +2,104 @@ import Foundation
 import Socket
 import Files
 
-var socket = try Socket.create()
-try socket.listen(on: 1103)
+enum ServerMode {
+    case menu
+    case fileserver
+    case hangman
+}
 
-print("waiting for connection")
-let connection = try socket.acceptClientConnection()
-                
-print("Connected to \(connection.remoteHostname)")
+public class Server {
 
-let directory = URL(fileURLWithPath: FileManager.default.currentDirectoryPath + "/files/")
+    let socket: Socket
+    let connection: Socket
+    let fileServer: FileServer
+    var mode: ServerMode
 
-let fileHandler = FileHandler(directory: directory)
-
-mainLoop: while true {
-    guard let command = try connection.readString() else {
-        continue
+    init?()
+    {
+        do {
+            print("Waiting for connection")
+            self.socket = try Socket.create()
+            try socket.listen(on: 1103)
+            self.connection = try socket.acceptClientConnection()
+            print("connected")
+            self.fileServer = FileServer(connection: connection)
+            self.mode = .menu
+        } catch {
+            print(error)
+            return nil
+        }
     }
-    
-    do {
+
+    func runMenu()
+    {
+        do {
+            try connection.write(from: "Main menu \n")
+            try connection.write(from: "1: File Server \n")
+            try connection.write(from: "2: Hangman \n")
+            guard let command = try connection.readString() else {
+                try connection.write(from: "Invalid command")
+                return
+            }
+            switch command {
+                case "file":
+                    mode = .fileserver
+                case "hangman":
+                    mode = .hangman
+                default:
+                    try connection.write(from: "Invalid command \n")
+            }
+        } catch {
+            print("Failed to run menu")
+            print(error)
+        }
+    }
+
+    func mainLoop()
+    {
+        switch mode {
+            case .menu: 
+                runMenu()
+            case .fileserver:
+                fileServer.mainLoop()
+            case .hangman:
+                break
+            default:
+                break
+        }
+    }
+
+}
+
+public class FileServer {
+
+    let directory: URL
+    let fileHandler: FileHandler
+    let connection: Socket
+
+    init(connection: Socket)
+    {
+        self.directory = URL(fileURLWithPath: FileManager.default.currentDirectoryPath + "/files/")
+        self.fileHandler = FileHandler(directory: self.directory)
+        self.connection = connection
+    }
+
+    func mainLoop()
+    {
+        do {
+            guard let command = try connection.readString() else {
+                try connection.write(from: "Invalid command")
+                return
+            }
+            try runCmd(command: command)
+        } catch {
+            print("Failed to run command")
+            print(error)
+        }
+    }
+
+    func runCmd(command: String) throws
+    {
         switch command {
             case "list files", "lf":
                 print("Listing files")
@@ -47,7 +127,7 @@ mainLoop: while true {
                 guard fileList.count > 0 else {
                     print("File not found")
                     try connection.write(from: "File not found")
-                    continue mainLoop
+                    return
                 }
                 let file = fileList[0]
 
@@ -57,9 +137,18 @@ mainLoop: while true {
                 try connection.write(from: "Invalid command")
                 print("Invalid command")
         }
-    } catch {
-        print("Failed to run command")
-        print(error)
-        continue
     }
+}
+
+public class Hangman {
+
+}
+
+
+guard let server = Server() else {
+    print("Failed to start server")
+    exit(1)
+}
+while true {
+    server.mainLoop()
 }
