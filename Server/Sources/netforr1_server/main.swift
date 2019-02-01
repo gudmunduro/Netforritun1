@@ -13,6 +13,7 @@ public class Server {
     let socket: Socket
     let connection: Socket
     let fileServer: FileServer
+    let hangman: Hangman
     var mode: ServerMode
 
     init?()
@@ -24,6 +25,7 @@ public class Server {
             self.connection = try socket.acceptClientConnection()
             print("connected")
             self.fileServer = FileServer(connection: connection)
+            self.hangman = Hangman(connection: connection)
             self.mode = .menu
         } catch {
             print(error)
@@ -141,6 +143,63 @@ public class FileServer {
 }
 
 public class Hangman {
+
+    var word: String
+    var guessedPart: String
+    var wrongPoints: Int
+    let connection: Socket
+
+    init(connection: Socket)
+    {
+        self.connection = connection
+        self.word = ""
+        self.guessedPart = ""
+        self.wrongPoints = 0
+        selectRandomWord()
+    }
+
+    func mainLoop()
+    {
+        do {
+            guard let char = try connection.readString() else {
+                try connection.write(from: "Invalid input")
+                return
+            }
+            try guess(char: char)
+        } catch {
+            print("Failed to check input")
+            print(error)
+        }
+    }
+
+    func selectRandomWord()
+    {
+        do {
+            let hangmanWordsData = try Folder(path: "files").files.filter({ $0.name == "hangmanWords" })[0].readAsString()
+            let words = hangmanWordsData.components(separatedBy: "\n")
+            self.word = words[Int.random(in: 0..<words.count)]
+            self.wrongPoints = 0
+            self.guessedPart = ""
+            self.word.forEach { _ in self.guessedPart += " " }
+        } catch {
+            print("Failed to read file")
+            print(error)
+        }
+    }
+
+    func guess(char: String) throws
+    {
+        if let index = word.index(of: Character(char)) {
+            guessedPart.replace(at: Int(word.distance(from: word.startIndex, to: index)), with: char)
+            try connection.write(from: "Correct")
+            try connection.write(from: self.guessedPart)
+        } else {
+            self.wrongPoints += 1
+            if self.wrongPoints == 5 {
+                try connection.write(from: "Incorrect, minus points: \(self.wrongPoints)")
+            }
+        }
+    }
 
 }
 
