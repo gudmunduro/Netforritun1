@@ -36,9 +36,7 @@ public class Server {
     func runMenu()
     {
         do {
-            try connection.write(from: "Main menu \n")
-            try connection.write(from: "1: File Server \n")
-            try connection.write(from: "2: Hangman \n")
+            try connection.write(from: "Main menu \n 1: File Server \n 2: Hangman \n")
             guard let command = try connection.readString() else {
                 try connection.write(from: "Invalid command")
                 return
@@ -46,8 +44,10 @@ public class Server {
             switch command {
                 case "file":
                     mode = .fileserver
+                    try connection.write(from: "Switched to file server")
                 case "hangman":
                     mode = .hangman
+                    try connection.write(from: "Switched to hangman")
                 default:
                     try connection.write(from: "Invalid command \n")
             }
@@ -59,15 +59,20 @@ public class Server {
 
     func mainLoop()
     {
-        switch mode {
-            case .menu: 
-                runMenu()
-            case .fileserver:
-                fileServer.mainLoop()
-            case .hangman:
-                break
-            default:
-                break
+        do {
+            switch mode {
+                case .menu: 
+                    runMenu()
+                case .fileserver:
+                    fileServer.mainLoop()
+                case .hangman:
+                    try hangman.mainLoop()
+                default:
+                    break
+            }
+        } catch {
+            print("ERROR")
+            print(error)
         }
     }
 
@@ -158,15 +163,18 @@ public class Hangman {
         selectRandomWord()
     }
 
-    func mainLoop()
+    func mainLoop() throws
     {
         do {
             guard let char = try connection.readString() else {
                 try connection.write(from: "Invalid input")
                 return
             }
+            print("Recieved char \(char)")
             try guess(char: char)
         } catch {
+            try connection.write(from: "Invalid input (2)")
+
             print("Failed to check input")
             print(error)
         }
@@ -180,7 +188,7 @@ public class Hangman {
             self.word = words[Int.random(in: 0..<words.count)]
             self.wrongPoints = 0
             self.guessedPart = ""
-            self.word.forEach { _ in self.guessedPart += " " }
+            self.word.forEach { _ in self.guessedPart += "*" }
         } catch {
             print("Failed to read file")
             print(error)
@@ -189,15 +197,20 @@ public class Hangman {
 
     func guess(char: String) throws
     {
+        guard char.length == 1 else {
+            try connection.write(from: "Invalid character")
+            return
+        }
+        print("Length is 1")
         if let index = word.index(of: Character(char)) {
+            print("Got index")
             guessedPart.replace(at: Int(word.distance(from: word.startIndex, to: index)), with: char)
-            try connection.write(from: "Correct")
-            try connection.write(from: self.guessedPart)
+            try connection.write(from: "Correct \n \(self.guessedPart)")
+            print("Success")
         } else {
+            print("Failed to get index")
             self.wrongPoints += 1
-            if self.wrongPoints == 5 {
-                try connection.write(from: "Incorrect, minus points: \(self.wrongPoints)")
-            }
+            try connection.write(from: "Incorrect, minus points: \(self.wrongPoints) \((self.wrongPoints == 5) ? "Game over" : "")")
         }
     }
 

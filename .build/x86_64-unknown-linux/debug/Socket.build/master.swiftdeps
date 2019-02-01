@@ -1,7 +1,0 @@
-version: "Swift version 4.2 (swift-4.2-RELEASE)"
-options: "05b16c985b8afbbc7b33628afe87e9b3"
-build_time: [1547648920, 131891440]
-inputs:
-  "/home/gumundur/Documents/netforr1_server/.build/checkouts/BlueSocket.git--5606306604725971082/Sources/Socket/Socket.swift": [1547648595, 0]
-  "/home/gumundur/Documents/netforr1_server/.build/checkouts/BlueSocket.git--5606306604725971082/Sources/Socket/SocketProtocols.swift": [1547648595, 0]
-  "/home/gumundur/Documents/netforr1_server/.build/checkouts/BlueSocket.git--5606306604725971082/Sources/Socket/SocketUtils.swift": [1547648595, 0]

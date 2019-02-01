@@ -1,6 +1,0 @@
-version: "Swift version 4.2 (swift-4.2-RELEASE)"
-options: "194399a008f37010c363e48f35683264"
-build_time: [1547672738, 244606769]
-inputs:
-  "/home/gumundur/Documents/netforr1_server/Sources/netforr1_server/main.swift": !dirty [1547672735, 0]
-  "/home/gumundur/Documents/netforr1_server/Sources/netforr1_server/netforr1_server.swift": [1547648363, 0]
