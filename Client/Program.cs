@@ -13,6 +13,7 @@ namespace verk1
     {
         static TcpClient tcpClient;
         static NetworkStream networkStream;
+        static string command = "_";
         static void Main(string[] args)
         {
             ConnectToServer();
@@ -21,11 +22,7 @@ namespace verk1
 
         static void WhileConnected()
         {
-            string command = Console.ReadLine();
-            byte[] writeBuffer = Encoding.UTF8.GetBytes(command);
-            networkStream.Write(writeBuffer, 0, writeBuffer.Length);
-
-            if (command == "") return;
+            if (command == "") goto afterLoop;
             while (true)
             {
                 bool state = tcpClient.Client.Connected;
@@ -44,17 +41,19 @@ namespace verk1
                         
                         string data = Encoding.UTF8.GetString(bytes);
                         Console.WriteLine("Server response:" + System.Environment.NewLine + "{0}", data);
-                        return;
+                        break;
 
                     }
                     catch
                     {
                         Console.WriteLine("No message received");                               
                     }
-                }
-                
-                
+                }     
             }
+            afterLoop:
+            command = Console.ReadLine();
+            byte[] writeBuffer = Encoding.UTF8.GetBytes(command);
+            networkStream.Write(writeBuffer, 0, writeBuffer.Length);
         }
 
         static void ConnectToServer()
